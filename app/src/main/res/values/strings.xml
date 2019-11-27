@@ -1,0 +1,309 @@
+<resources>
+    <string name="app_name">e-Business Profile</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_account">Account</string>
+
+    <!-- Financial Aspect   -->
+    <string name="fa_1">
+        1.	Jumlah Bed\n
+        \t(Berapa Jumlah BED yang akan disediakan oleh RS tersebut terkait dengan pendapatan yang akan diteriuma oleh RS Tersebut)\n
+        2.	Kelas Rumah Sakit\n
+        \t(Target Rumah Sakit apakah Pasien BPJS atau umum,jika BPJS yang berprospek adalah RS Kelas C dan jika non BPJS RS Kelas A dan B)\n
+        3.	Operator\n
+        \t(Jika Menggunakan operator pihak ketiga perlu diperhatikan kinerja operator yang digunakan serta lihat perjanjiannya tersebut)\n
+        4.	Layanan Unggulan\n
+        \t(Layanan unggulan harus dilihat dari banyaknya penyakit yang terjadi di daerah tersebut dan memiliki fasilitas alat kesehatan yang baik)
+    </string>
+    <string name="fa_2">1.	Analisa\n
+Analisa Peralatan yang akan dibiayai baik terkait hal teknis dan reputasi merk alkes tersebut,perizinan alkes,garansi produk, dan manajemen pembiayaannya apakah pembelian tunai,pinjaman dari pihak lain atau konsinyasi\n
+2.	Pangsa Pasar\n
+Alat kesehatan terseut apakah aka nada banyak penggunaannya,seberapa pentingkah alat tersebut bagi RS tersebut.\n
+3.	Operator\n
+Perlu diperhatikan operator yang menggunakan haruslah sesuai kompetensinya dan bersertifikat. Untuk operator haruslah orang ahli (contoh:radiologi), sedangkan untuk membaca hasil dari alkes tersebut haruslah dr spesialis tersebut
+</string>
+    <string name="fa_3">1.	Lokasi dan Wilayah
+•	Lihat Dukungan lingkungan sekitar
+•	Akses Masuk dan keluar dari RS tersebut bagaimana
+•	Sarana perolehan air dan pembuangan limbah seperti apa
+•	Sarana penunjang pengadaan Pelayananan Kesehatan seperti apa
+2.	Melebar atau Meninggi
+•	Lahannya mendukung atau tidak
+•	Tenaga kerja yang akan diperkerjakan apakah sesuai dengan kebutuhan
+•	Bagaimana cara melakukan patient safety
+•	Bagaimana bentuk IT Infrastructurenya
+3.	Unggulan Pelayanan
+•	Tenaga pelayanan apakah sudah memadai dan sudah berkompeten serta bersertifikat
+•	Fasilitas apa saja yang akan tersedia nantinya
+•	Alat kesehatan apa saja yang akan tersedia nantinya
+•	RS Apakah akan menerima pasien rujukan (BPJS) atau tidak
+
+4.	Target Pasien
+Siapakah target pasien yang akan dijadikan target oleh RS, apakah Pasien Umum, khusus, BPJS, atau Komersial (Profit dan Social) :
+•	UMUM
+	Lihat tenaga kesehatan yang dimiliki
+	Fasilitas pendukungnya seperti apa
+	Pelayanan intensif dan kegawatdaruratannya seperti apa
+•	Khusus
+	Lihat Unggulan tenaga kesehatan yang dimiliki apa saja
+	Apakah pelayanannya dilakukan secara komprehensif atau tidak
+	Optimalisasi pelayanan paripurnanya seperti apa
+•	BPJS
+	Apakah RS menerapkan Clinical Pathways
+	Bagaimana RS Tersebut melakukan efisiensi biaya
+	Bagaimana cara penagihan kepada BPJS dan berapa lama
+•	KHUSUS
+	Kenyamanan dan fasilitas yang tersedia seperti apa
+	Apakah peralatan medis yang canggih di dukung dengan tenaga medis yang expert atau tidak
+
+</string>
+    <string name="fa_4">1.	Kelas A  Rp. ...............\n
+2.	Kelas B Rp. ..............\n
+3.	Kelas C Rp. ...........
+</string>
+    <string name="fa_5">	Jasa Medis
+	Jasa Non Medis
+	Donasi
+	Melalui Investasi
+	Modal Sendiri
+
+</string>
+    <string name="fa_6">
+        1.	Ideal Equity 40% dan Loan 60%
+    </string>
+    <string name="fa_7">
+        1.	Pengembangan Bisnis
+2.	Pembelian Peralatan
+3.	Pembangunan gedung baru
+4.	Menalangi tagihan pihak ke-3
+
+    </string>
+
+    <!-- Business Aspect   -->
+    <string name="ba_1">
+        1.	Ijin Mendirikan Bangunan\n
+2.	Ijin Penggunaan Bangunan\n
+3.	Ijin Berdasarkan Undang-undang Gangguan\n
+4.	Rekomendasi Dinas Pemadam Kebakaran.\n
+5.	Ijin Pemakaian Lift.\n
+6.	Ijin Pemakaian Mesin Diesel.\n
+7.	Ijin Instalasi Petir.\n
+8.	Ijin Pemakaian Boiler.\n
+9.	Ijin Penggunaan Alat Radiasi.\n
+10.	Ijin Pengolahan Limbah.\n
+11.	Ijin Membangun Rumah Sakit.\n
+12.	Ijin Operasional untuk RS Swasta dan BUMN
+    </string>
+
+    <string name="ba_2">
+        1.	Perijinan
+2.	Sertifikasi
+3.	Kalibrasi
+4.	Pemeriksaan berkala oleh Instansi yang berwenang:
+	Depnaker – PLN -  Bapeten – KemenKes - Dinas Kebakaran – Pemda
+
+    </string>
+
+    <string name="ba_3">1.	Tidak Diakreditasi (Tidak Lulus),
+2.	Akreditasi Bersyarat: nilai total >65 % - &lt; 75 %, tidak ada nilai &lt; 60%, 1 tahun disurvei / nilai lagi pelayananan yang nilainya di bawah 75%.
+3.	Akreditasi Penuh: nilai total > 75 %, tidak ada nilai &lt; 60%, 3 tahun masa berlaku.
+	Akreditasi Istimewa: 5 tahun masa berlaku, didapat setelah 3 X berturut-turut lulus.
+</string>
+
+    <string name="BusinessPrespective_Parameters1">
+        \n
+        •	Indikator : BOR\n
+        •	Nilai Rujukan : Kemenkes -> 60% - 80%\n
+        \t\t\t\t\t\t\t\t\t\t\t Grafik Barber Johnson -> 75% - 85%\n
+        \t\t\t\t\t\t\t\t\t\t\t Expertiese FABA -> 60-80%\n
+        •	Keterangan : BOR merupakan berapa persen tingkat pemanfaatan sarana rawat inap suatu rumah sakit
+        \n
+
+    </string>
+    <string name="BusinessPrespective_Parameters2">
+        \n
+        •	Indikator : AvLOS - Bedah\n
+        •	Nilai Rujukan : Kemenkes -> 6 - 9 Hari\n
+        \t\t\t\t\t\t\t\t\t\t\t Grafik Barber Johnson -> 3 - 12 Hari\n
+        \t\t\t\t\t\t\t\t\t\t\t Expertiese FABA -> 4 - 7 Hari%\n
+        •	Keterangan : AvLOS - Bedah merupakan gambaran berapa hari seorang pasien rata-rata dirawat dengan tindakan Bedah
+        \n
+
+    </string>
+    <string name="BusinessPrespective_Parameters3">
+        \n
+        •	Indikator : AvLOS - Non Bedah\n
+        •	Nilai Rujukan : Kemenkes -> 6 - 9 Hari\n
+        \t\t\t\t\t\t\t\t\t\t\t Grafik Barber Johnson -> 3 - 12 Hari\n
+        \t\t\t\t\t\t\t\t\t\t\t Expertiese FABA -> 3 - 5 Hari%\n
+        •	Keterangan : AvLOS - Non Bedah merupakan gambaran berapa hari seorang pasien rata-rata dirawat dengan tindakan Non Bedah
+        \n
+
+    </string>
+    <string name="BusinessPrespective_Parameters4">
+        \n
+        •	Indikator : BTO\n
+        •	Nilai Rujukan : Kemenkes -> 40 - 50 Kali\n
+        \t\t\t\t\t\t\t\t\t\t\t Grafik Barber Johnson -> >30 Kali\n
+        \t\t\t\t\t\t\t\t\t\t\t Expertiese FABA -> 40 - 50 Kali\n
+        •	Keterangan : BTO merupakan gambaran berapa kali dalam setahun sebuah tempat tidur digunakan berbagai penderita
+        \n
+
+    </string>
+    <string name="BusinessPrespective_Parameters5">
+        \n
+        •	Indikator : TOI\n
+        •	Nilai Rujukan : Kemenkes -> 1 - 3 Hari\n
+        \t\t\t\t\t\t\t\t\t\t\t Grafik Barber Johnson -> 1 - 3 Hari\n
+        \t\t\t\t\t\t\t\t\t\t\t Expertiese FABA -> 1 - 3 Hari\n
+        •	Keterangan : TOI Merupakan gambaran berapa lama sebuah tempat tidur berada dalam keadaan kosong sebelum digunakan kembali pleh pasien lain
+        \n
+
+    </string>
+    <string name="BusinessPrespective_Parameters6">
+        \n
+        •	Indikator : NDR\n
+        •	Nilai Rujukan : Kemenkes -> Lebih Kecil Dari 25/1000 Penderita/Pasien\n
+        \t\t\t\t\t\t\t\t\t\t\t Grafik Barber Johnson ->  25/1000 Penderita/Pasien\n
+        \t\t\t\t\t\t\t\t\t\t\t tExpertiese FABA -> Lebih Kecil Dari 25/1000 Penderita/Pasien\n
+        •	Keterangan : NDR Merupakan jumlah angka kematian pasien selama lebih dari 48 jam setelah d irawat untuk tiap-tiap 1000 pasien keluar
+        \n
+
+    </string>
+    <string name="BusinessPrespective_Parameters7">
+        \n
+        •	Indikator : GDR\n
+        •	Nilai Rujukan : Kemenkes -> Lebih Kecil Dari 45/1000 Penderita/Pasien\n
+        \t\t\t\t\t\t\t\t\t\t\t Grafik Barber Johnson -> Lebih Kecil Dari 45/1000 Penderita/Pasien\n
+        \t\t\t\t\t\t\t\t\t\t\t Expertiese FABA -> Lebih Kecil Dari 45/1000 Penderita/Pasien\n
+        •	Keterangan : GDR Merupakan Jumlah angka kematian umum untuk tiap 1000 Pasien Keluar
+        \n
+
+    </string>
+    <string name="Financial_Parameter1">Total Skor (TS)</string>
+
+
+    <!--  INVESTMENT PARAMETERS   -->
+    <string name="investment_param_1">•	0 – 10 Tahun Layak\n
+•	11 – 20 Tahun LAYAK dengan catatan memiliki peralatan penunjang medis dan minimal RS bertype B\n
+•	Diatas 20 Tahun TIDAK LAYAK\n
+    </string>
+    <string name="investment_param_2">•	Minimal 13 % / Diatas Bunga deposito LAYAK\n
+•	Jika diabawah 13 %/dibawah atau sama dengan bunga Deposito TIDAK LAYAK
+    </string>
+    <string name="investment_param_3">•	Minimal 15 % LAYAK\n
+•	JIKA DIBAWAH 15 % TIDAK LAYAK
+</string>
+    <string name="investment_param_4">•	Minimal 15 % LAYAK\n
+•	JIKA DIBAWAH 15 % TIDAK LAYAK
+</string>
+    <string name="investment_param_5">•	Minimal 20 % LAYAK\n
+•	JIKA DIBAWAH 20 % TIDAK LAYAK
+</string>
+    <string name="investment_param_6">•	Minimal 15 % LAYAK\n
+•	JIKA DIBAWAH 15 % TIDAK LAYAK
+</string>
+    <string name="investment_param_7">•	Minimal Nilai 0 (Positif) LAYAK
+•	Jika dibawah Nilai 0 (Negatif)  TIDAK LAYAK
+
+</string>
+    <string name="investment_param_8">•	Minimal Nilai 1 LAYAK\n
+•	Jika dibawah nilai 1 TIDAK LAYAK
+</string>
+    <string name="investment_param_9">•	Nilai Investasi 15.000.000.000 – 20.000.000.000\n
+•	Pendapatan (Tarif)\n
+-BPJS 1.000.000 – 1.800.000/Pasien\n
+-Pribadi/Umum 2.000.000 – 6.000.000/Pasien\n
+•	COGS 70%\n
+•	Payback 5 – 8  Tahun\n
+•	Keterangan\n
+1.	Jika NIlai Investasi dibawah 10 M. Maksimal Payback 5 Tahun\n
+2.	Jika Nilai investasi diatas 10 M nilai investasi Maksimal Payback 8 Tahun dan tergantung Nilai Investasi(Merk) serta tariff yang dikenakan kepada pasien dan juga lihat COGS-nya
+</string>
+    <string name="investment_param_10">•	Nilai Investasi 15.000.000.000 – 20.000.000.000\n
+•	Pendapatan (Tarif)\n
+-BPJS 1.000.000 – 1.800.000/Pasien\n
+-Pribadi/Umum 2.000.000 – 6.000.000/Pasien\n
+•	COGS 70%\n
+•	Payback 5 – 8  Tahun\n
+•	Keterangan\n
+1.	Jika NIlai Investasi dibawah 10 M. Maksimal Payback 5 Tahun\n
+2.	Jika Nilai investasi diatas 10 M nilai investasi Maksimal Payback 8 Tahun dan tergantung Nilai Investasi(Merk) serta tariff yang dikenakan kepada pasien dan juga lihat COGS-nya
+</string>
+    <string name="invstmen_param_11">
+        •	Nilai Investasi 10.000.000.000 – 15.000.000.000
+•	Pendapatan (Tarif)
+-BPJS 600.000 – 1.300.000/Pasien
+-Pribadi/Umum 1.000.000 – 5.000.000/Pasien
+•	COGS 70%
+•	Payback 5 – 5 Tahun
+•	Keterangan
+1.	Jika NIlai Investasi dibawah 10 M. Maksimal Payback 3 Tahun
+2.	Jika Nilai investasi diatas 10 M nilai investasi Maksimal Payback 5 Tahun dan tergantung NIlai Investasi (Merk) serta Tarif yang dikenakan kepada pasien dan juga lihat COGS-nya
+    </string>
+    <string name="invstmen_param_12">
+        •	Nilai Investasi 400.000.000 – 1.200.000.000
+•	Pendapatan (Tarif)
+-BPJS 50.000 – 100.000/Pasien
+-Pribadi/Umum 100.000 – 500.000/Pasien
+•	COGS 70%
+•	Payback 2 – 3 Tahun
+•	Keterangan
+1.	Jika NIlai Investasi dibawah 1 M. Maksimal Payback 2 Tahun
+2.	Jika Nilai investasi diatas 1 M nilai investasi Maksimal Payback 3 Tahun dan tergantung Nilai Investasi (Merk) serta Tarif yang dikenakan kepada pasien dan juga lihat COGS-nya
+    </string>
+    <string name="invstmen_param_13">
+        •	Nilai Investasi 100.000.000 – 500.000.000
+•	Pendapatan (Tarif)
+-BPJS 750.000 – 1.500.000/Pasien
+-Pribadi/Umum 1.000.000 – 2.000.000/Pasien
+•	COGS 70%
+•	Payback 2 – 3 Tahun
+•	Keterangan
+1.	Jika NIlai Investasi dibawah 300 Juta. Maksimal Payback 2 Tahun
+2.	Jika Nilai investasi diatas 300 Juta nilai investasi Maksimal Payback 3 Tahun dan tergantung Nilai Investasi (Merk) serta Tarif yang dikenakan kepada pasien dan juga lihat COGS-nya
+    </string>
+
+    <string-array name="Tahuns">
+        <item>Tahun ke-1</item>
+        <item>Tahun ke-2</item>
+        <item>Tahun ke-3</item>
+    </string-array>
+    <string-array name="Kota">
+        <item>Semua Kota</item>
+        <item>Kota Jakarta Barat</item>
+    </string-array>
+    <string-array name="Kelas">
+        <item>Semua Kelas</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>D Pratama</item>
+        <item>Belum Ditetapkan</item>
+    </string-array>
+
+    <string-array name="Tahun">
+        <item>Tahun</item>
+        <item>2000</item>
+        <item>2001</item>
+        <item>2002</item>
+        <item>2003</item>
+        <item>2004</item>
+        <item>2005</item>
+    </string-array>
+    <string-array name="JenisPeraturan">
+        <item>Pilih Jenis Peraturan</item>
+        <item>Peraturan1</item>
+        <item>Peraturan2</item>
+        <item>Peraturan3</item>
+        <item>Peraturan4</item>
+        <item>Peraturan5</item>
+        <item>Peraturan6</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

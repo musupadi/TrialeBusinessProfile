@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.destinyapp.e_businessprofile">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.SustainableFinancing.ResultInvestasiActivity"></activity>
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.SustainableFinancing.CTScanSimulationActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.SustainableFinancing.PeralatanKesehatanActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.SustainableFinancing.HitungInvestasiActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.CreditWorthiness.RasioKebutuhan.ResultActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.CreditWorthiness.RasioKebutuhan.InputRasioKebutuhanActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.SustainableFinancing.InputInvestasiActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.SustainableFinancing.NilaiRujukanActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.SustainableFinancing.SustainableFinancingActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.CreditWorthiness.AnalisisLaporanKeuangan.ResultAnalisisLaporanKeuanganActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.CreditWorthiness.AnalisisLaporanKeuangan.InputAnalisisLaporanActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.CreditWorthiness.AnalisisKinerjaRS.GraphLineActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.CreditWorthiness.AnalisisKinerjaRS.InputSimulationAnalisisKinerjaRSActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.CreditWorthiness.AnalisisKinerjaRS.SimulationAnalisisKinerjaRSActivity" />
+        <activity
+            android:name=".Activity.ui.chat.HealtcareChat.GroupChatHealtcareActivity"
+            android:parentActivityName=".Activity.DashboardActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.ListOfProbing.BusinessAspectActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.ListOfProbing.FinancialActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.ListOfProbing.ListOfProbingActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.CreditWorthiness.AnalisisLaporanKeuangan.ParameterAnalisisLaporanKeuanganActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.CreditWorthiness.AnalisisLaporanKeuangan.AnalisisLaporanKeuanganActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.CreditWorthiness.AnalisisKinerjaRS.ParametersAnalisisKinerjaRSActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.CreditWorthiness.AnalisisKinerjaRS.AnalisisKinerjaRSActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.CreditWorthiness.CreditWorthinessActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.BusinessRefrence.Regulasi.RegulasiFullVersionActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.BusinessRefrence.Regulasi.RegulasiActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.BusinessRefrence.Ebook.FullVersionActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.BusinessRefrence.RegulationActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.BusinessRefrence.Ebook.EbookActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.BusinessRefrence.BusinessRefrenceActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.Ecosystem.SupportingIndustries.SupportingIndustriesActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.Ecosystem.ListOfHospital.DetailHospitalActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.Ecosystem.ListOfHospital.ListOfHospitalActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.Ecosystem.EcosystemActivity" />
+        <activity android:name=".Activity.ui.home.Healtcare.Hospital.DashboardHospital" />
+        <activity android:name=".Activity.LoadingActivity" />
+        <activity
+            android:name=".Activity.DashboardActivity"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppThemeNoAction" />
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Activity.MapsActivity"
+            android:label="Maps Activity" />
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "796545936213",
+    "firebase_url": "https://e-business-7ff79.firebaseio.com",
+    "project_id": "e-business-7ff79",
+    "storage_bucket": "e-business-7ff79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796545936213:android:05d7040c0575b1f5511ddc",
+        "android_client_info": {
+          "package_name": "com.destinyapp.e_businessprofile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796545936213-hi2qhjrhc5l7u0l1lir26vn0tmgj4mp4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMF8JH-CF8a3jqZ0IJ3qmRTob0CMToNuA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796545936213-hi2qhjrhc5l7u0l1lir26vn0tmgj4mp4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
