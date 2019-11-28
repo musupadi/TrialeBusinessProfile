@@ -9,6 +9,7 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
@@ -56,5 +57,10 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics:17.2.1'
     implementation 'com.google.firebase:firebase-database:19.2.0'
     implementation 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+    implementation 'com.itextpdf:itextg:5.5.10'
+
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+
 }
 apply plugin: 'com.google.gms.google-services'

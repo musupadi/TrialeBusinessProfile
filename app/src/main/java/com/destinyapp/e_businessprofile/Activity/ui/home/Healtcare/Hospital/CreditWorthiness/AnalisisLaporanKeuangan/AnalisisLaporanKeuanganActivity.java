@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import com.destinyapp.e_businessprofile.Activity.ui.home.Healtcare.Hospital.CreditWorthiness.AnalisisKinerjaRS.AnalisisKinerjaRSActivity;
 import com.destinyapp.e_businessprofile.Activity.ui.home.Healtcare.Hospital.CreditWorthiness.AnalisisKinerjaRS.ParametersAnalisisKinerjaRSActivity;
 import com.destinyapp.e_businessprofile.R;
+import com.destinyapp.e_businessprofile.SharedPreferance.DB_Helper;
 
 public class AnalisisLaporanKeuanganActivity extends AppCompatActivity {
     LinearLayout parameters,simulation;
@@ -30,6 +31,8 @@ public class AnalisisLaporanKeuanganActivity extends AppCompatActivity {
         simulation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                DB_Helper dbHelper = new DB_Helper(AnalisisLaporanKeuanganActivity.this);
+                dbHelper.Hitung();
                 Intent intent = new Intent(AnalisisLaporanKeuanganActivity.this, InputAnalisisLaporanActivity.class);
                 startActivity(intent);
             }

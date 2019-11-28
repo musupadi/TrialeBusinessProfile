@@ -33,5 +33,12 @@ public class ListOfProbingActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        riskandmitigation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ListOfProbingActivity.this,RiskAndMitigationActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

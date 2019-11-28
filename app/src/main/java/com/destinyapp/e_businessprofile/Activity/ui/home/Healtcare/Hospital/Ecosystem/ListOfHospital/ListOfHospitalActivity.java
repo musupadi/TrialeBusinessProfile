@@ -11,6 +11,8 @@ import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
@@ -19,6 +21,7 @@ import android.widget.Toast;
 
 import com.destinyapp.e_businessprofile.API.ApiRequestFajar;
 import com.destinyapp.e_businessprofile.API.RetroServerFajar;
+import com.destinyapp.e_businessprofile.Adapter.AdapterAutoComplete;
 import com.destinyapp.e_businessprofile.Adapter.AdapterDataRS;
 import com.destinyapp.e_businessprofile.Adapter.AdapterSpinnerKota;
 import com.destinyapp.e_businessprofile.Adapter.AdapterSpinnerProvinsi;
@@ -42,6 +45,8 @@ import retrofit2.Response;
 
 public class ListOfHospitalActivity extends AppCompatActivity implements OnMapReadyCallback {
     RecyclerView recyclerData;
+    AutoCompleteTextView NamaRS;
+    Button cari;
     private GoogleMap mMap;
     private RecyclerView.Adapter mAdapter;
     private List<DataModel> mItems = new ArrayList<>();
@@ -53,7 +58,7 @@ public class ListOfHospitalActivity extends AppCompatActivity implements OnMapRe
     ImageView imageFailed;
     ImageView back;
     private AdapterSpinnerProvinsi SpinnerProvinsi;
-    Boolean test;
+    int loop = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,7 +72,6 @@ public class ListOfHospitalActivity extends AppCompatActivity implements OnMapRe
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        test = true;
         JumlahRumahSakit=findViewById(R.id.tvJumlahRumahSakit);
         JumlahBed=findViewById(R.id.tvJumlahBed);
         kelas = findViewById(R.id.spinnerKelas);
@@ -78,7 +82,10 @@ public class ListOfHospitalActivity extends AppCompatActivity implements OnMapRe
         imageFailed= findViewById(R.id.ivFailed);
         IdKota = findViewById(R.id.tvIdKota);
         IdProvinsi = findViewById(R.id.tvIdProvinsi);
+        NamaRS=findViewById(R.id.etNamaRS);
+        cari=findViewById(R.id.btnCari);
         failed.setVisibility(View.GONE);
+
         LatLng latLng = new LatLng(-6.2468965, 115.2898833);
         BitmapDrawable bitmapdraw=(BitmapDrawable)getResources().getDrawable(R.drawable.fabalogonew);
         Bitmap b=bitmapdraw.getBitmap();
@@ -118,7 +125,9 @@ public class ListOfHospitalActivity extends AppCompatActivity implements OnMapRe
                 DataModel clickedItem = (DataModel) parent.getItemAtPosition(position);
                 IdKota.setText(clickedItem.getId_kab_kota());
                 getDefaultLatLong(mMap,Double.parseDouble(clickedItem.getLatitude()),Double.parseDouble(clickedItem.getLongitude()),clickedItem.getNama_provinsi());
-                Logic(mMap);
+                Logic(mMap,"0");
+                loop = loop + 1;
+
             }
 
             @Override
@@ -126,15 +135,16 @@ public class ListOfHospitalActivity extends AppCompatActivity implements OnMapRe
 
             }
         });
+
+
         //DONE
         kelas.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                mMap.clear();
-                if (test=true){
-                    test = false;
-                    Logic(mMap);
+                if (loop >1){
+                    Logic(mMap,"0");
                 }
+                loop = loop + 1;
             }
 
             @Override
@@ -142,10 +152,38 @@ public class ListOfHospitalActivity extends AppCompatActivity implements OnMapRe
 
             }
         });
+        cari.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (NamaRS.getText().toString().isEmpty()){
+                    Logic(mMap,"0");
+                }else{
+                    Logic(mMap,NamaRS.getText().toString());
+                }
+
+            }
+        });
         imageFailed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Logic(mMap);
+                Logic(mMap,"0");
+            }
+        });
+    }
+    private void getAutoNamaRS(){
+        ApiRequestFajar api = RetroServerFajar.getClient().create(ApiRequestFajar.class);
+        Call<ResponseModel> getMapel = api.listHospital(IdKota.getText().toString(),IdProvinsi.getText().toString(),"","");
+        getMapel.enqueue(new Callback<ResponseModel>() {
+            @Override
+            public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
+                mItems=response.body().getData();
+                AdapterAutoComplete adapter = new AdapterAutoComplete(ListOfHospitalActivity.this,mItems);
+                NamaRS.setAdapter(adapter);
+            }
+
+            @Override
+            public void onFailure(Call<ResponseModel> call, Throwable t) {
+                Toast.makeText(ListOfHospitalActivity.this,"Data Error dalam getMapel Method",Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -202,7 +240,7 @@ public class ListOfHospitalActivity extends AppCompatActivity implements OnMapRe
 
 
 
-    private void Logic(final GoogleMap googleMap){
+    private void Logic(final GoogleMap googleMap,final String namaRS){
         failed.setVisibility(View.GONE);
         mMap = googleMap;
         mMap.clear();

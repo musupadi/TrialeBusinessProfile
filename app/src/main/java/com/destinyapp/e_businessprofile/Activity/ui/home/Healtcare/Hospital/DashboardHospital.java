@@ -14,6 +14,7 @@ import com.destinyapp.e_businessprofile.API.ApiRequestFajar;
 import com.destinyapp.e_businessprofile.API.RetroServerFajar;
 import com.destinyapp.e_businessprofile.Activity.DashboardActivity;
 import com.destinyapp.e_businessprofile.Activity.ui.home.Healtcare.Hospital.BusinessRefrence.BusinessRefrenceActivity;
+import com.destinyapp.e_businessprofile.Activity.ui.home.Healtcare.Hospital.Compilance.VideoActivity;
 import com.destinyapp.e_businessprofile.Activity.ui.home.Healtcare.Hospital.CreditWorthiness.CreditWorthinessActivity;
 import com.destinyapp.e_businessprofile.Activity.ui.home.Healtcare.Hospital.Ecosystem.EcosystemActivity;
 import com.destinyapp.e_businessprofile.Activity.ui.home.Healtcare.Hospital.ListOfProbing.ListOfProbingActivity;
@@ -81,6 +82,13 @@ public class DashboardHospital extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DashboardHospital.this, SustainableFinancingActivity.class);
+                startActivity(intent);
+            }
+        });
+        Compilance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DashboardHospital.this, VideoActivity.class);
                 startActivity(intent);
             }
         });

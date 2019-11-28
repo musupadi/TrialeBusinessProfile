@@ -347,6 +347,7 @@
                             android:gravity="center"/>
                     </LinearLayout>
                     <TextView
+                        android:id="@+id/tvNilai1"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -689,6 +690,7 @@
                             android:gravity="center"/>
                     </LinearLayout>
                     <TextView
+                        android:id="@+id/tvNilai2"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1031,6 +1033,7 @@
                             android:gravity="center"/>
                     </LinearLayout>
                     <TextView
+                        android:id="@+id/tvNilai3"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

@@ -98,18 +98,39 @@ Siapakah target pasien yang akan dijadikan target oleh RS, apakah Pasien Umum, k
     </string>
 
     <string name="ba_2">
-        1.	Perijinan
-2.	Sertifikasi
-3.	Kalibrasi
+        1.	Perijinan\n
+2.	Sertifikasi\n
+3.	Kalibrasi\n
 4.	Pemeriksaan berkala oleh Instansi yang berwenang:
 	Depnaker – PLN -  Bapeten – KemenKes - Dinas Kebakaran – Pemda
 
     </string>
 
-    <string name="ba_3">1.	Tidak Diakreditasi (Tidak Lulus),
-2.	Akreditasi Bersyarat: nilai total >65 % - &lt; 75 %, tidak ada nilai &lt; 60%, 1 tahun disurvei / nilai lagi pelayananan yang nilainya di bawah 75%.
+    <string name="ba_3">1.	Tidak Diakreditasi (Tidak Lulus),\n
+2.	Akreditasi Bersyarat: nilai total >65 % - &lt; 75 %, tidak ada nilai &lt; 60%, 1 tahun disurvei / nilai lagi pelayananan yang nilainya di bawah 75%.\n
 3.	Akreditasi Penuh: nilai total > 75 %, tidak ada nilai &lt; 60%, 3 tahun masa berlaku.
 	Akreditasi Istimewa: 5 tahun masa berlaku, didapat setelah 3 X berturut-turut lulus.
+</string>
+    <string name="ba_4">1.	BPJS Kesehatan\n
+2.	Asuransi\n
+3.	Pasien Umum (Pribadi)\n
+
+</string>
+    <string name="ba_5">1.	Supplier\n
+2.	Salary/Fee Dokter\n
+3.	Operation\n
+Jika Biaya tenaga kerja lebih dari 35% dari total revenue maka RS tersebut dapat dikatakan sedang ada masalah
+
+</string>
+    <string name="ba_6">-	Siapakah penanggung jawab usaha dan apakah telah memenuhi kualifikasi yang dipersyaratkan (memiliki feasibility study)
+</string>
+    <string name="ba_7">-	Apakah usaha telah dilengkapi dengan ijin usaha RS, SIP untuk dokter yang masih berlaku dan telah memiliki Surat Ijin Praktek?(Wajib ADA)
+</string>
+    <string name="ba_8">-	Berapa jumlah dokter yang berpraktek, baik umum maupun spesialis dan saat ini berpraktek dimana saja? (Ada di Peraturan Pemerintah)
+</string>
+    <string name="ba_9">-	Bagaimana sistem pembayaran pasien ? (langsung, jaminan pihak ketiga, asuransi)
+</string>
+    <string name="ba_10">-	Siapakah yang bertindak sebagai penanggung jawab rumah sakit ? (Direktur Utama)
 </string>
 
     <string name="BusinessPrespective_Parameters1">

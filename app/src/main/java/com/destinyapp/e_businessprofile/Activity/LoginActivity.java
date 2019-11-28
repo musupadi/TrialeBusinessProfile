@@ -104,8 +104,6 @@ public class LoginActivity extends AppCompatActivity {
         String Email = email.getText().toString();
         if (email.getText().toString().isEmpty()){
             Check = "Silahkan Masukan Email";
-        }else if(!Email.substring(Email.lastIndexOf("@")+1).equals("mandiri.co.id")){
-            Check = "Email Harus @mandiri.co.id";
         }else if (password.getText().toString().isEmpty()){
             Check = "Silahkan Masukan Password";
         }else{

@@ -60,6 +60,8 @@ public class InputRasioKebutuhanActivity extends AppCompatActivity {
         idProvinsi = findViewById(R.id.tvIdProvinsi);
         Rasio = findViewById(R.id.tvRasioKebutuhan);
         tempattidur = findViewById(R.id.jumlahTempatTidurDibutuhkan);
+        Rasio.setVisibility(View.INVISIBLE);
+        tempattidur.setVisibility(View.INVISIBLE);
         getProvinsi();
         aProvinsi = new AdapterSpinnerProvinsi(InputRasioKebutuhanActivity.this,mItems);
         Provinsi.setAdapter(aProvinsi);
@@ -100,14 +102,16 @@ public class InputRasioKebutuhanActivity extends AppCompatActivity {
         });
     }
     private void Hitung(){
+        Rasio.setVisibility(View.VISIBLE);
+        tempattidur.setVisibility(View.VISIBLE);
         double jumlahTempatTidur = Double.parseDouble(JumlahTempatTidur.getText().toString());
         double jumlahPenduduk = Double.parseDouble(Penduduk.getText().toString());
 
         double rasio = ((jumlahTempatTidur / jumlahPenduduk) * 1000);
         DecimalFormat df2 = new DecimalFormat("#.##");
-        Rasio.setText(String.valueOf(df2.format(rasio)));
+        Rasio.setText("Rasio Kebutuhan : "+String.valueOf(df2.format(rasio)));
         double hasil = jumlahTempatTidur - (jumlahPenduduk / 1000);
-        tempattidur.setText(String.valueOf(df2.format(hasil)));
+        tempattidur.setText("Kebutuhan Tempat Tidur : "+String.valueOf(df2.format(hasil)));
     }
 
     private void Logic(){

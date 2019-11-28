@@ -77,27 +77,9 @@ public class SliderAdapter extends PagerAdapter {
                         TATO.getText().toString(),
                         AktivaBersih.getText().toString());
                 dbHelper.InputData(user);
-                Toast.makeText(context, "Data Tahun ke "+position+1+" Berhasil Tersimpan", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Data Tahun ke "+String.valueOf(position+1)+" Berhasil Tersimpan", Toast.LENGTH_SHORT).show();
             }
         });
-//        slideImageView.setImageResource(slide_image[position]);
-//        Nama.setText(slide_nama[position]);
-//        Tittle.setText(slide_title[position]);
-//        Deskripsi.setText(slide_deskripsi[position]);
-//        final MediaPlayer SuaraMe = MediaPlayer.create(context,suara_saya[position]);
-//        Deskripsi.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(context,"Tekan Untuk mendengarkan Suara Saya",Toast.LENGTH_SHORT).show();
-//            }
-//        });
-//        Deskripsi.setOnLongClickListener(new View.OnLongClickListener() {
-//            @Override
-//            public boolean onLongClick(View v) {
-//                SuaraMe.start();
-//                return true;
-//            }
-//        });
         container.addView(view);
         return view;
     }

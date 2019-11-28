@@ -7,32 +7,6 @@
     tools:context=".Activity.LoginActivity"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"
-            android:orientation="horizontal"
-            android:background="@color/colorWhite">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/fabalogonew"
-                android:layout_weight="3"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="e-Business Profile"
-                android:textSize="25sp"
-                android:gravity="center|left"
-                android:textColor="@color/colorAccent"/>
-        </LinearLayout>
-    </androidx.appcompat.widget.Toolbar>
-
     <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -56,7 +30,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
-                    android:src="@drawable/fabalogonew"
+                    android:src="@drawable/logoebusiness"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"/>
 

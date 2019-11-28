@@ -20,7 +20,7 @@ public class ResultAnalisisLaporanKeuanganActivity extends AppCompatActivity {
     TextView tvBobotPP1,tvSkorPP1,tvBobotPP2,tvSkorPP2,tvBobotPP3,tvSkorPP3;
     TextView tvBobotPerputaranAset1,tvSkorPerputaranAset1,tvBobotPerputaranAset2,tvSkorPerputaranAset2,tvBobotPerputaranAset3,tvSkorPerputaranAset3;
     TextView tvBobotRasioAktiva1,tvSkorRasioAktiva1,tvBobotRasioAktiva2,tvSkorRasioAktiva2,tvBobotRasioAktiva3,tvSkorRasioAktiva3;
-    TextView tvTotal1,tvTotal2,tvTotal3;
+    TextView tvTotal1,tvTotal2,tvTotal3,tvKeterangan1,tvKeterangan2,tvKeterangan3;
     String BobotROI,SkorROI,BobotCashRatio,SkorCashRatio,BobotCurentRatio,
             SkorCurrentRatio,BobotCP,SkorCP,BobotPP,SkorPP,BobotPerputaranAset,SkorPerputaranAset,
             BobotRasioAktiva,SkorRasioAktiva,Total;
@@ -76,6 +76,9 @@ public class ResultAnalisisLaporanKeuanganActivity extends AppCompatActivity {
         tvTotal1 = findViewById(R.id.tvTotal1);
         tvTotal2 = findViewById(R.id.tvTotal2);
         tvTotal3 = findViewById(R.id.tvTotal3);
+        tvKeterangan1 = findViewById(R.id.tvNilai1);
+        tvKeterangan2 = findViewById(R.id.tvNilai2);
+        tvKeterangan3 = findViewById(R.id.tvNilai3);
 
         final DB_Helper dbHelper = new DB_Helper(ResultAnalisisLaporanKeuanganActivity.this);
         Cursor cursor = dbHelper.checkAnalis("1");
@@ -242,13 +245,16 @@ public class ResultAnalisisLaporanKeuanganActivity extends AppCompatActivity {
             tvSkorPP1.setText(SkorPP);
             tvBobotPerputaranAset1.setText(BobotPerputaranAset);
             tvSkorPerputaranAset1.setText(SkorPerputaranAset);
-            tvTotal1.setText(String.valueOf(Double.parseDouble(BobotROI)+
+            String tot = String.valueOf(Double.parseDouble(BobotROI)+
                     Double.parseDouble(BobotCashRatio)+
                     Double.parseDouble(BobotCurentRatio)+
                     Double.parseDouble(BobotCP)+
                     Double.parseDouble(BobotPP)+
                     Double.parseDouble(BobotPerputaranAset)+
-                    Double.parseDouble(BobotRasioAktiva)));
+                    Double.parseDouble(BobotRasioAktiva));
+            tvTotal1.setText(tot);
+
+            tvKeterangan1.setText("Rumah Sakit Memiliki keuangan "+keterangan(tot)+" dengan Nilai "+ifelses(tot)+" Skor "+tot);
         }else{
             card1.setVisibility(View.GONE);
         }
@@ -417,8 +423,18 @@ public class ResultAnalisisLaporanKeuanganActivity extends AppCompatActivity {
             tvSkorPP2.setText(SkorPP);
             tvBobotPerputaranAset2.setText(BobotPerputaranAset);
             tvSkorPerputaranAset2.setText(SkorPerputaranAset);
+            String tot = String.valueOf(Double.parseDouble(BobotROI)+
+                    Double.parseDouble(BobotCashRatio)+
+                    Double.parseDouble(BobotCurentRatio)+
+                    Double.parseDouble(BobotCP)+
+                    Double.parseDouble(BobotPP)+
+                    Double.parseDouble(BobotPerputaranAset)+
+                    Double.parseDouble(BobotRasioAktiva));
+            tvTotal2.setText(tot);
+
+            tvKeterangan2.setText("Rumah Sakit Memiliki keuangan "+keterangan(tot)+" dengan Nilai "+ifelses(tot)+" Skor "+tot);
         }else{
-            card1.setVisibility(View.GONE);
+            card2.setVisibility(View.GONE);
         }
 
         cursor = dbHelper.checkAnalis("3");
@@ -585,11 +601,67 @@ public class ResultAnalisisLaporanKeuanganActivity extends AppCompatActivity {
             tvSkorPP3.setText(SkorPP);
             tvBobotPerputaranAset3.setText(BobotPerputaranAset);
             tvSkorPerputaranAset3.setText(SkorPerputaranAset);
+            String tot = String.valueOf(Double.parseDouble(BobotROI)+
+                    Double.parseDouble(BobotCashRatio)+
+                    Double.parseDouble(BobotCurentRatio)+
+                    Double.parseDouble(BobotCP)+
+                    Double.parseDouble(BobotPP)+
+                    Double.parseDouble(BobotPerputaranAset)+
+                    Double.parseDouble(BobotRasioAktiva));
+            tvTotal3.setText(tot);
+
+            tvKeterangan3.setText("Rumah Sakit Memiliki keuangan "+keterangan(tot)+" dengan Nilai "+ifelses(tot)+" Skor "+tot);
         }else{
-            card1.setVisibility(View.GONE);
+            card3.setVisibility(View.GONE);
         }
 
 
 
+    }
+    private String ifelses(String total){
+        String skor="AAA";
+        if (Double.parseDouble( total) >= 95){
+            skor="AA";
+        }else if(Double.parseDouble( total) >= 80 && Double.parseDouble( total) <95){
+            skor="AA";
+        }else if(Double.parseDouble( total) >= 65 && Double.parseDouble( total) <80){
+            skor="A";
+        }else if(Double.parseDouble( total) >= 50 && Double.parseDouble( total) <65){
+            skor="BBB";
+        }else if(Double.parseDouble( total) >= 40 && Double.parseDouble( total) <50){
+            skor="BB";
+        }else if(Double.parseDouble( total) >= 30 && Double.parseDouble( total) <40){
+            skor="B";
+        }else if(Double.parseDouble( total) >= 20 && Double.parseDouble( total) <30){
+            skor="CCC";
+        }else if(Double.parseDouble( total) >= 10 && Double.parseDouble( total) <20){
+            skor="CC";
+        }else if(Double.parseDouble( total) >= 0 && Double.parseDouble( total) <10){
+            skor="C";
+        }
+        return skor;
+    }
+    private String keterangan(String total){
+        String skor="Sehat";
+        if (Double.parseDouble( total) >= 95){
+            skor="Sehat";
+        }else if(Double.parseDouble( total) >= 80 && Double.parseDouble( total) <95){
+            skor="Sehat";
+        }else if(Double.parseDouble( total) >= 65 && Double.parseDouble( total) <80){
+            skor="Sehat";
+        }else if(Double.parseDouble( total) >= 50 && Double.parseDouble( total) <65){
+            skor="Kurang Sehat";
+        }else if(Double.parseDouble( total) >= 40 && Double.parseDouble( total) <50){
+            skor="Kurang Sehat";
+        }else if(Double.parseDouble( total) >= 30 && Double.parseDouble( total) <40){
+            skor="Kurang Sehat";
+        }else if(Double.parseDouble( total) >= 20 && Double.parseDouble( total) <30){
+            skor="Tidak Sehat";
+        }else if(Double.parseDouble( total) >= 10 && Double.parseDouble( total) <20){
+            skor="Tidak Sehat";
+        }else if(Double.parseDouble( total) >= 0 && Double.parseDouble( total) <10){
+            skor="Tidak Sehat";
+        }
+        return skor;
     }
 }
